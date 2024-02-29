@@ -15,13 +15,13 @@ x += 10;
 x *= 4;
 console.log(x);
 
-const weightMark = 78;
+const massMark = 78;
 const heightMark = 1.69;
-const bmiMark = weightMark / (heightMark * heightMark);
+const bmiMark = massMark / (heightMark * heightMark);
 
-const weightJohn = 92;
+const massJohn = 92;
 const heightJohn = 1.95;
-const bmiJohn = weightJohn / (heightJohn * heightJohn);
+const bmiJohn = massJohn / (heightJohn * heightJohn);
 
 let markHigherBMI = bmiMark > bmiJohn;
 
@@ -31,8 +31,26 @@ if ((markHigherBMI = true)) {
   );
 } else {
   console.log(
-    "John's BMI " + bmiJohn + " is higher than Mark's " + bmiMark + " !"
+    "John's BMI (" + bmiJohn + ") is higher than Mark's (" + bmiMark + ") !"
   );
 }
 
 console.log(markHigherBMI);
+
+const averageAge = (ageJonas + ageSarah) / 2;
+
+console.log(averageAge);
+
+const inputYear = "1991";
+console.log(Number(inputYear) + 18);
+
+const scoreDolphins = (96 + 108 + 89) / 3;
+const scoreKoalas = (88 + 91 + 110) / 3;
+
+if (scoreDolphins === scoreKoalas) {
+  console.log("Both win the trophy");
+} else if (scoreDolphins > scoreKoalas) {
+  console.log("Dolphins win the trophy");
+} else {
+  console.log("Koalas win the trophy");
+}
