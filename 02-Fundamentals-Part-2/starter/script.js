@@ -57,6 +57,9 @@ const yearsUntilRetirement = (birthyear, firstName) => {
 console.log(yearsUntilRetirement(1996, "Ahmed"));
 
 console.log(yearsUntilRetirement(1959, "Mike"));
+console.log(yearsUntilRetirement(1959, "Mike"));
+console.log(yearsUntilRetirement(1959, "Mike"));
+console.log(yearsUntilRetirement(1959, "Mike"));
 
 function cutFruitPieces(fruit) {
   return fruit * 4;
@@ -71,3 +74,19 @@ function fruitProcessor(apples, oranges) {
 }
 
 console.log(fruitProcessor(2, 3));
+
+//code challange part 2 number 1 :
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+
+const scoreDolphins = calcAverage(score1, score2, score3);
+const scoreKoalas = calcAverage(score1, score2, score3);
+
+function checkWinner(scoreDolphins, scoreKoalas) {
+  if (scoreKoalas > scoreDolphins) {
+    console.log(`Koalas win (${scoreKoalas} vs. ${scoreDolphins})`);
+  } else if (scoreDolphins > scoreKoalas) {
+    console.log(`Dolphins win (${scoreDolphins} vs. ${scoreKoalas})`);
+  } else {
+    console.log("No team wins...");
+  }
+}
