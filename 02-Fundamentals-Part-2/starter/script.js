@@ -76,17 +76,34 @@ function fruitProcessor(apples, oranges) {
 console.log(fruitProcessor(2, 3));
 
 //code challange part 2 number 1 :
-const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+// const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 
-const scoreDolphins = calcAverage(score1, score2, score3);
-const scoreKoalas = calcAverage(score1, score2, score3);
+// const scoreDolphins = calcAverage(score1, score2, score3);
+// const scoreKoalas = calcAverage(score1, score2, score3);
 
-function checkWinner(scoreDolphins, scoreKoalas) {
-  if (scoreKoalas > scoreDolphins) {
-    console.log(`Koalas win (${scoreKoalas} vs. ${scoreDolphins})`);
-  } else if (scoreDolphins > scoreKoalas) {
-    console.log(`Dolphins win (${scoreDolphins} vs. ${scoreKoalas})`);
-  } else {
-    console.log("No team wins...");
-  }
-}
+// function checkWinner(scoreDolphins, scoreKoalas) {
+//   if (scoreKoalas > scoreDolphins) {
+//     console.log(`Koalas win (${scoreKoalas} vs. ${scoreDolphins})`);
+//   } else if (scoreDolphins > scoreKoalas) {
+//     console.log(`Dolphins win (${scoreDolphins} vs. ${scoreKoalas})`);
+//   } else {
+//     console.log("No team wins...");
+//   }
+// }
+
+const friends = ["John", "olive", "jay"];
+
+console.log(friends.indexOf("John"));
+console.log(friends.indexOf("jay"));
+console.log(friends.includes("jay"));
+console.log(friends.includes("joe"));
+
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+
+const bills = [123, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip([bills[2]])];
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+console.log(bills, tips, totals);
